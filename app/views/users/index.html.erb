@@ -16,7 +16,7 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.slack_handle %></td>
+        <td><%= link_to "#{user.slack_handle}", user_path(user) %></td>
         <td><%= user.house.name %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
       </tr>

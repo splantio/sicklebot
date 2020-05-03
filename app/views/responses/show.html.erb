@@ -2,12 +2,12 @@
 
 <p>
   <strong>User:</strong>
-  <%= @response.user_id %>
+  <%= @response.user.slack_handle %>
 </p>
 
 <p>
   <strong>Question:</strong>
-  <%= @response.question_id %>
+  <%= @response.question.body %>
 </p>
 
 <p>
@@ -16,8 +16,11 @@
 </p>
 
 <p>
-  <strong>Correct:</strong>
-  <%= @response.correct %>
+  <% if @response.body == @response.question.answer %>
+    <strong>Correct!</strong>
+  <% else %>
+    <strong>False</strong>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_response_path(@response) %> |

@@ -61,6 +61,16 @@ class ResponsesController < ApplicationController
     end
   end
 
+  def users
+    @users ||= User.all
+  end
+  helper_method :users
+
+  def questions
+    @questions ||= Question.all
+  end
+  helper_method :questions
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_response

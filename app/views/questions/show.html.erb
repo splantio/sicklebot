@@ -12,7 +12,7 @@
 
 <p>
   <strong>Author:</strong>
-  <%= @question.author.slack_handle %>
+  <%= link_to "#{@question.author.slack_handle}", user_path(@question.author) %>
 </p>
 
 <p>
