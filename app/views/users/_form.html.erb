@@ -17,8 +17,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :house_id %>
-    <%= form.number_field :house_id %>
+    <%= form.label :house %>
+    <% houses.each do |house| %>
+      <div class="radio_selection">
+        <%= form.label :house, "#{house.name}", :value => "#{house.id}" %>
+        <%= form.radio_button :house_id, "#{house.id}" %>
+      </div>
+    <% end %>
   </div>
 
   <div class="actions">
