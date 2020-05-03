@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Slack handle:</strong>
+  <%= @user.slack_handle %>
+</p>
+
+<p>
+  <strong>House:</strong>
+  <%= @user.house_id %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

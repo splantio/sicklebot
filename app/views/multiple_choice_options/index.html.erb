@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Multiple Choice Options</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>Option</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @multiple_choice_options.each do |multiple_choice_option| %>
+      <tr>
+        <td><%= multiple_choice_option.question_id %></td>
+        <td><%= multiple_choice_option.option %></td>
+        <td><%= link_to 'Show', multiple_choice_option %></td>
+        <td><%= link_to 'Edit', edit_multiple_choice_option_path(multiple_choice_option) %></td>
+        <td><%= link_to 'Destroy', multiple_choice_option, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Multiple Choice Option', new_multiple_choice_option_path %>

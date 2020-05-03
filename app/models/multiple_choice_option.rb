@@ -1,0 +1,2 @@
+class MultipleChoiceOption < ApplicationRecord
+end
