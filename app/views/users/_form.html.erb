@@ -18,12 +18,7 @@
 
   <div class="field">
     <%= form.label :house %>
-    <% houses.each do |house| %>
-      <div class="radio_selection">
-        <%= form.label :house, "#{house.name}", :value => "#{house.id}" %>
-        <%= form.radio_button :house_id, "#{house.id}" %>
-      </div>
-    <% end %>
+    <%= form.select(:house_id, houses.each_with_object([]) { |house, memo| memo << [house.name, house.id] }) %>
   </div>
 
   <div class="actions">

@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :body %>
+    <%= form.label :question_body %>
     <%= form.text_field :body %>
   </div>
 
@@ -22,19 +22,15 @@
   </div>
 
   <div class="field">
-    <%= form.label :author_id %>
-    <%= form.number_field :author_id %>
+    <%= form.label :author %>
+    <%= form.select(:author_id, users.each_with_object([]) { |user, memo| memo << [user.slack_handle, user.id] }) %>
   </div>
 
-  <div class="field">
-    <%= form.label :type %>
-    <%= form.number_field :type %>
-  </div>
-
-  <div class="field">
-    <%= form.label :date_last_asked %>
-    <%= form.date_select :date_last_asked %>
-  </div>
+<!--  Temporarily making it just short answer for the meantime-->
+<!--  <div class="field">-->
+    <%#= form.label :type %>
+    <%#= form.number_field :type %>
+<!--  </div>-->
 
   <div class="actions">
     <%= form.submit %>

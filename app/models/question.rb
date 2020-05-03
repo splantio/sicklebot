@@ -3,4 +3,7 @@ class Question < ApplicationRecord
   has_many :multiple_choice_options
   has_many :responses
   enum type: [:multiple_choice, :short_answer]
+
+  validates :body, presence: true
+  validates :answer, presence: true
 end

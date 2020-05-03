@@ -61,6 +61,11 @@ class QuestionsController < ApplicationController
     end
   end
 
+  def users
+    @users ||= User.all
+  end
+  helper_method :users
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_question
