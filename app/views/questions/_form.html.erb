@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= form.label :author %>
-    <%= form.select(:author_id, users.each_with_object([]) { |user, memo| memo << [user.slack_handle, user.id] }) %>
+    <%= form.select(:author_id, form_selection(users, :slack_handle)) %>
   </div>
 
 <!--  Temporarily making it just short answer for the meantime-->

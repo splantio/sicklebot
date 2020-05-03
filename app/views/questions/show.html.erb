@@ -1,13 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @question.body %>
-</p>
+<h1><%= @question.body %></h1>
 
 <p>
   <strong>Answer:</strong>
-  <%= @question.answer %>
+  <span class="spoiler"><%= @question.answer %></span>
 </p>
 
 <p>
