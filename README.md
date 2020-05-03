@@ -1,24 +1,11 @@
-# README
+# Sicklebot
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Manually writing trivia questions in our slack channel can get a little tedious and time consuming. 
 
-Things you may want to cover:
+Arguably, writing a web app to handle this is more time consuming. But damn if I'm not going to try.
 
-* Ruby version
+### Database schema
+last updated May 2 2020
 
-* System dependencies
+<img width="633" alt="sicklebot schema" src="https://user-images.githubusercontent.com/14205949/80898340-33e5b600-8cd0-11ea-9ec5-c8e5b60b3717.png">
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
