@@ -4,6 +4,17 @@ Manually writing trivia questions in our slack channel can get a little tedious 
 
 Arguably, writing a web app to handle this is more time consuming. But damn if I'm not going to try.
 
+### Running the app
+
+```bash
+# if your first time running the app:
+bundle install
+
+# Run the server
+rails server
+```
+then view at `localhost:3000`
+
 ### Database schema
 last updated May 2 2020
 

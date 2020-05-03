@@ -2,30 +2,4 @@
 
 <h1>Responses</h1>
 
-<% questions.each do |question| %>
-  <b><%= question.body %></b>
-
-  <% if question.responses.size > 0 %>
-    <table>
-      <tbody>
-        <% question.responses.each do |response| %>
-          <tr>
-            <td><%= response.user.slack_handle %></td>
-            <td><%= response.body %></td>
-            <td><%= response.correct %></td>
-            <td><%= link_to 'Show', response %></td>
-            <td><%= link_to 'Edit', edit_response_path(response) %></td>
-            <td><%= link_to 'Destroy', response, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
-  <% else %>
-    <p>No answers yet.</p>
-  <% end %>
-
-  <br>
-<% end %>
-
-
 <%= link_to 'New Response', new_response_path %>
