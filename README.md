@@ -2,7 +2,7 @@
 
 Manually writing trivia questions in our slack channel can get a little tedious and time consuming. 
 
-Arguably, writing a web app to handle this is more time consumer. But damn if I'm not going to try.
+Arguably, writing a web app to handle this is more time consuming. But damn if I'm not going to try.
 
 ### Database schema
 last updated May 2 2020
