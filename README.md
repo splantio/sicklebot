@@ -1,4 +1,4 @@
-# Sicklebot
+# Sicklebot [![Build Status](https://travis-ci.com/splantio/sicklebot.svg?branch=master)](https://travis-ci.com/splantio/sicklebot)
 
 Manually writing trivia questions in our slack channel can get a little tedious and time consuming. 
 
