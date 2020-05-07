@@ -18,7 +18,7 @@ class QuestionsTest < ApplicationSystemTestCase
     fill_in "Author", with: @question.author_id
     fill_in "Body", with: @question.body
     fill_in "Date last asked", with: @question.date_last_asked
-    fill_in "Type", with: @question.type
+    fill_in "Type", with: @question.format
     click_on "Create Question"
 
     assert_text "Question was successfully created"
@@ -33,7 +33,7 @@ class QuestionsTest < ApplicationSystemTestCase
     fill_in "Author", with: @question.author_id
     fill_in "Body", with: @question.body
     fill_in "Date last asked", with: @question.date_last_asked
-    fill_in "Type", with: @question.type
+    fill_in "Type", with: @question.format
     click_on "Update Question"
 
     assert_text "Question was successfully updated"

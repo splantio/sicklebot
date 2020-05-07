@@ -1,9 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  question_id: 1
-  option: MyString
+flying_car_option_one:
+  question: mc_from_hufflepuff
+  option: Ford Consul
 
-two:
-  question_id: 1
-  option: MyString
+flying_car_option_two:
+  question: mc_from_hufflepuff
+  option: Ford Escort
+
+flying_car_option_three:
+  question: mc_from_hufflepuff
+  option: Ford Zephyr

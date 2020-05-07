@@ -2,7 +2,7 @@ require 'test_helper'
 
 class MultipleChoiceOptionsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @multiple_choice_option = multiple_choice_options(:one)
+    @multiple_choice_option = multiple_choice_options(:flying_car_option_one)
   end
 
   test "should get index" do
@@ -17,7 +17,15 @@ class MultipleChoiceOptionsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create multiple_choice_option" do
     assert_difference('MultipleChoiceOption.count') do
-      post multiple_choice_options_url, params: { multiple_choice_option: { option: @multiple_choice_option.option, question_id: @multiple_choice_option.question_id } }
+      post(
+        multiple_choice_options_url,
+        params: {
+          multiple_choice_option: {
+            option: @multiple_choice_option.option,
+            question_id: @multiple_choice_option.question_id,
+          },
+        },
+      )
     end
 
     assert_redirected_to multiple_choice_option_url(MultipleChoiceOption.last)
@@ -34,7 +42,15 @@ class MultipleChoiceOptionsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update multiple_choice_option" do
-    patch multiple_choice_option_url(@multiple_choice_option), params: { multiple_choice_option: { option: @multiple_choice_option.option, question_id: @multiple_choice_option.question_id } }
+    patch(
+      multiple_choice_option_url(@multiple_choice_option),
+      params: {
+        multiple_choice_option: {
+          option: @multiple_choice_option.option,
+          question_id: @multiple_choice_option.question_id,
+        },
+      },
+    )
     assert_redirected_to multiple_choice_option_url(@multiple_choice_option)
   end
 

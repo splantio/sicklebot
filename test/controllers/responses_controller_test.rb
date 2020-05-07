@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ResponsesControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @response = responses(:one)
+    @response = responses(:ravenclaw_correct)
   end
 
   test "should get index" do
@@ -17,7 +17,19 @@ class ResponsesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create response" do
     assert_difference('Response.count') do
-      post responses_url, params: { response: { body: @response.body, correct: @response.correct, question_id: @response.question_id, user_id: @response.user_id } }
+      # Don't ask me why this is necessary.
+      response = @response
+      post(
+        responses_url,
+        params: {
+          response: {
+            body: response.body,
+            correct: response.correct,
+            question_id: response.question_id,
+            user_id: response.user_id
+          }
+        }
+      )
     end
 
     assert_redirected_to response_url(Response.last)
@@ -34,8 +46,20 @@ class ResponsesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update response" do
-    patch response_url(@response), params: { response: { body: @response.body, correct: @response.correct, question_id: @response.question_id, user_id: @response.user_id } }
-    assert_redirected_to response_url(@response)
+    # Don't ask me why this is necessary.
+    response = @response
+    patch(
+      response_url(response),
+      params: {
+        response: {
+          body: response.body,
+          correct: response.correct,
+          question_id: response.question_id,
+          user_id: response.user_id
+        }
+      }
+    )
+    assert_redirected_to response_url(response)
   end
 
   test "should destroy response" do
