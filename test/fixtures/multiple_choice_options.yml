@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 flying_car_option_one:
-  question: question_one
+  question: mc_from_hufflepuff
   option: Ford Consul
 
 flying_car_option_two:
-  question: question_one
+  question: mc_from_hufflepuff
   option: Ford Escort
 
 flying_car_option_three:
-  question: question_one
+  question: mc_from_hufflepuff
   option: Ford Zephyr

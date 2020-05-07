@@ -2,7 +2,7 @@ require 'test_helper'
 
 class HousesControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @house = houses(:one)
+    @house = houses(:gryffindor)
   end
 
   test "should get index" do

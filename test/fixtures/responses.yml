@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-incorrect_response:
+slytherin_incorrect:
   user: slytherin_user
-  question: question_one
+  question: mc_from_hufflepuff
   body: Ford Consul
   correct: false
 
-correct_response:
+ravenclaw_correct:
   user: ravenclaw_user
-  question: question_two
+  question: sa_from_gryffindor
   body: Bulgaria
   correct: true

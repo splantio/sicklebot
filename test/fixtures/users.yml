@@ -1,17 +1,17 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 gryffindor_user:
-  slack_handle: @biz
+  slack_handle: '@biz'
   house: gryffindor
 
 slytherin_user:
-  slack_handle: @quyen
+  slack_handle: '@quyen'
   house: slytherin
 
 hufflepuff_user:
-  slack_handle: @plant
+  slack_handle: '@plant'
   house: hufflepuff
 
 ravenclaw_user:
-  slack_handle: @roxanne
+  slack_handle: '@roxanne'
   house: ravenclaw
