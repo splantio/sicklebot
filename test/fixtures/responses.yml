@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  user_id: 1
-  question_id: 1
-  body: MyString
+incorrect_response:
+  user: slytherin_user
+  question: question_one
+  body: Ford Consul
   correct: false
 
-two:
-  user_id: 1
-  question_id: 1
-  body: MyString
-  correct: false
+correct_response:
+  user: ravenclaw_user
+  question: question_two
+  body: Bulgaria
+  correct: true

@@ -17,7 +17,7 @@ class QuestionsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create question" do
     assert_difference('Question.count') do
-      post questions_url, params: { question: { answer: @question.answer, author_id: @question.author_id, body: @question.body, date_last_asked: @question.date_last_asked, type: @question.type } }
+      post questions_url, params: { question: { answer: @question.answer, author_id: @question.author_id, body: @question.body, date_last_asked: @question.date_last_asked, format: @question.format } }
     end
 
     assert_redirected_to question_url(Question.last)
@@ -34,7 +34,7 @@ class QuestionsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update question" do
-    patch question_url(@question), params: { question: { answer: @question.answer, author_id: @question.author_id, body: @question.body, date_last_asked: @question.date_last_asked, type: @question.type } }
+    patch question_url(@question), params: { question: { answer: @question.answer, author_id: @question.author_id, body: @question.body, date_last_asked: @question.date_last_asked, format: @question.format } }
     assert_redirected_to question_url(@question)
   end
 

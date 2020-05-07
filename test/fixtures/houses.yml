@@ -1,7 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
+gryffindor:
+  name: Gryffindor
 
-two:
-  name: MyString
+slytherin:
+  name: Slytherin
+
+hufflepuff:
+  name: Hufflepuff
+
+ravenclaw:
+  name: Ravenclaw

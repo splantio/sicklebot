@@ -1,9 +1,17 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  slack_handle: MyString
-  house_id: 1
+gryffindor_user:
+  slack_handle: @biz
+  house: gryffindor
 
-two:
-  slack_handle: MyString
-  house_id: 1
+slytherin_user:
+  slack_handle: @quyen
+  house: slytherin
+
+hufflepuff_user:
+  slack_handle: @plant
+  house: hufflepuff
+
+ravenclaw_user:
+  slack_handle: @roxanne
+  house: ravenclaw

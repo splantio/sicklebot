@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_03_124253) do
+ActiveRecord::Schema.define(version: 2020_05_07_022820) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,10 +32,10 @@ ActiveRecord::Schema.define(version: 2020_05_03_124253) do
     t.string "body"
     t.string "answer"
     t.integer "author_id"
-    t.integer "type"
     t.datetime "date_last_asked", precision: 6
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "format"
   end
 
   create_table "responses", force: :cascade do |t|

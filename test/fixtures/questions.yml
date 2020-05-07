@@ -1,15 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  body: MyString
-  answer: MyString
-  author_id: 1
-  type: 1
+question_one:
+  body: What model car does Arthur Weasley drive/fly?
+  answer: Ford Anglia
+  author: hufflepuff_user
+  format: multiple choice
   date_last_asked: 2020-05-02
 
-two:
-  body: MyString
-  answer: MyString
-  author_id: 1
-  type: 1
+question_two:
+  body: What country is Krum from?
+  answer: Bulgaria
+  author_id: gryffindor_user
+  format: short answer
   date_last_asked: 2020-05-02
