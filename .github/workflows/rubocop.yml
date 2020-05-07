@@ -1,0 +1,11 @@
+name: Rubocop checks
+
+on: [pull_request]
+
+jobs:
+  rubocop:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: gimenete/rubocop-action@1.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
