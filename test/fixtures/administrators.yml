@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+splantio:
+  username: splantio
+  password_digest: $2a$12$.hlqjuoPQwuv6u5B0/C7tuiaoIWkymRFycrMmQUvFqRBi/qELX.YG # plaintext `sicklebot`
+
+oitnalps:
+  username: oitnalps
+  password_digest: $2a$12$.hlqjuoPQwuv6u5B0/C7tuiaoIWkymRFycrMmQUvFqRBi/qELX.YG # plaintext `sicklebot`

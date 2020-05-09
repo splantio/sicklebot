@@ -2,6 +2,7 @@ require 'test_helper'
 
 class QuestionsControllerTest < ActionDispatch::IntegrationTest
   setup do
+    ApplicationController.any_instance.stubs(current_user: administrators(:splantio))
     @question = questions(:mc_from_hufflepuff)
   end
 

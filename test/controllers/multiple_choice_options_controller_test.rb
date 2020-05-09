@@ -2,6 +2,7 @@ require 'test_helper'
 
 class MultipleChoiceOptionsControllerTest < ActionDispatch::IntegrationTest
   setup do
+    ApplicationController.any_instance.stubs(current_user: administrators(:splantio))
     @multiple_choice_option = multiple_choice_options(:flying_car_option_one)
   end
 
