@@ -2,6 +2,7 @@ require 'test_helper'
 
 class UsersControllerTest < ActionDispatch::IntegrationTest
   setup do
+    ApplicationController.any_instance.stubs(current_user: administrators(:splantio))
     @user = users(:gryffindor_user)
   end
 

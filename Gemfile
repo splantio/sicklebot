@@ -5,8 +5,8 @@ ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3'
-# Use sqlite3 as the database for Active Record
-# gem 'sqlite3', '~> 1.4'
+# Use bcrypt for auth things
+gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 # Use postgres as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
@@ -35,6 +35,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'method_source', '~> 0.9.0'
   gem 'pry', '~> 0.12.2'
+  gem 'pry-remote'
+  gem 'pry-nav'
 end
 
 group :development do
@@ -47,6 +49,7 @@ group :development do
 end
 
 group :test do
+  gem 'mocha'
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
