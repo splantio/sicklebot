@@ -23,3 +23,14 @@
     <% end %>
   </tbody>
 </table>
+
+<h1>Admins</h1>
+<table>
+  <tbody>
+  <% @admins.each do |admin| %>
+    <tr>
+      <td><%= admin.username %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
